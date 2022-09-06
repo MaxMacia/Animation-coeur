@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    font-family: 'Dancing Script', cursive;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    i{
+        font-size: 5em;
+        color: #484848;
+        animation: flash-heart 1.2s linear infinite;
+    }
+    p{
+        color: white;
+        font-size: 3em;
+        color: #484848;
+        animation: flash-letters 1.2s linear infinite;
+    }
+}
+
+@keyframes flash-heart {
+    0%{
+        color: #ff0000;
+        text-shadow: 0px 0px 7px #ff0000;
+    }
+    90%{
+        color: #484848;
+        text-shadow: none;
+    }
+    100%{
+        color: #ff0000;
+        text-shadow: 0px 0px 7px #ff0000;
+    }
+}
+
+@keyframes flash-letters {
+    0%{
+        color: #fff900;
+        text-shadow: 0px 0px 7px #fff900;
+    }
+    90%{
+        color: #484848;
+        text-shadow: none;
+    }
+    100%{
+        color: #fff900;
+        text-shadow: 0px 0px 7px #fff900;
+    }
+}
